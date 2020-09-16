@@ -117,8 +117,13 @@
               "devServerTarget": "threshold-warning-directive:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "threshold-warning-directive"
 }
