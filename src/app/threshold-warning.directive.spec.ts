@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { findEl, setFieldValue } from './spec-helpers/element.spec-helper';
 import { ThresholdWarningDirective } from './threshold-warning.directive';
@@ -15,11 +15,11 @@ describe('ThresholdWarningDirective', () => {
   let fixture: ComponentFixture<HostComponent>;
   let input: HTMLInputElement;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ThresholdWarningDirective, HostComponent],
     }).compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HostComponent);
