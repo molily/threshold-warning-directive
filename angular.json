@@ -106,8 +106,9 @@
       }
     }
   },
-  "defaultProject": "threshold-warning-directive",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
